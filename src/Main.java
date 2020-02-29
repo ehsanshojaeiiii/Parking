@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
         ParkingManager parkingManager = new ParkingManager();
         String input = "";
-        Scanner addScanner=null;
         while (true) {
             Scanner mainScanner = new Scanner(System.in);
             out.println("*******************************");
@@ -21,14 +20,8 @@ public class Main {
 
             if (input.equals("1")) {
 
-                System.out.println("*******************************");
-                System.out.println("Add Vehicle");
-                System.out.println("*******************************");
-                System.out.println("1. Car");
-                System.out.println("2. Bike");
 
-                int id=mainScanner.nextInt();
-                parkingManager.add(id,mainScanner);
+                parkingManager.add();
 
             } else if (input.equals("2")) {
 

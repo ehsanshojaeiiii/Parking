@@ -4,15 +4,10 @@ import static java.lang.System.*;
 
 class Car extends Vehicle {
 
-    public Car(int id ,int entryHour) {
+    public Car(int id ) {
 
-        super(id,entryHour);
+        super(id);
     }
-
-    public Car() {
-        super();
-    }
-
 
     @Override
     public int entrancePrice() {
@@ -29,10 +24,8 @@ class Car extends Vehicle {
     @Override
     public int getCost() {
         int x = getEntryHour() - getExitHour();
-        int z = x * hourPrice();
+        int z = Math.abs(x) * hourPrice();
         return z + entrancePrice();
-
-
     }
 
 

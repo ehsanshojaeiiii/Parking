@@ -4,61 +4,74 @@ import static java.lang.System.out;
 
 public class ParkingManager {
 
-    int id;
+    int entry = 0;
+    int carHourInput = 0;
+    int id = 0;
     Map<String, Integer> map = new HashMap<>();
     Car carNoArgs;
     ArrayList<Vehicle> data = new ArrayList<>();
-    Vehicle car = new Car();
+    Vehicle vehicle;
 
-    Vehicle bike = new Bike();
+//    Bike bike = null;
+//    Car car = null;
+
+    public void add() {
 
 
-    public void add(int Scannerid, Scanner reader) {
-//        reader = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+
+        out.println("*******************************");
+        out.println("Add Vehicle");
+        out.println("*******************************");
+        out.println("1. Car");
+        out.println("2. Bike");
 
 
-        if (Scannerid == 1) {
+        String add_inp = in.nextLine();
+        boolean is_one = add_inp.startsWith("1");
+        boolean is_two = add_inp.startsWith("2");
+        if (is_one) {
 
             out.println("Please,enter entry hour: ");
-            String carHourInput="" ;
+            carHourInput = 0;
 
             try {
 
-                 carHourInput= reader.nextLine();
+
+                carHourInput = in.nextInt();
 
             } catch (InputMismatchException e) {
                 out.println("Error!Please Enter Correct Input");
             }
             if (carHourInput >= 1 && carHourInput <= 24) {
-                car.setEntryHour(carHourInput);
-                data.add(car);
                 id++;
-                bike.setId(id);
-                data.add(car);
-                out.println("id :" + data.get(0).getId());
+                vehicle = new Car(id);
+                vehicle.setEntryHour(carHourInput);
+                data.add(vehicle);
+                out.println("id :" + data.get(id - 1).getId());
 
 
             } else {
                 out.println("your number must between 1 , 24");
             }
-        } else if (Scannerid == 2) {
+        } else if (is_two) {
             out.println("Please,enter entry hour: ");
-            int bikeHour_inp = 0;
+            int bikeHourInput = 0;
 
             try {
-                bikeHour_inp = reader.nextInt();
+                bikeHourInput = in.nextInt();
             } catch (InputMismatchException e) {
                 out.println("Error ! Please Enter Correct Input");
             }
 
-            if (bikeHour_inp >= 1 && bikeHour_inp <= 24) {
+            if (bikeHourInput >= 1 && bikeHourInput <= 24) {
 
-                bike.setEntryHour(bikeHour_inp);
-                data.add(bike);
                 id++;
-                bike.setId(id);
-                data.add(bike);
-                out.println("id :" + data.get(0).getId());
+                vehicle = new Bike(id);
+                vehicle.setEntryHour(bikeHourInput);
+                data.add(vehicle);
+                out.println("id :" + data.get(id - 1).getId());
+
 
             } else {
                 out.println("your number must between 1 , 24");
@@ -73,11 +86,45 @@ public class ParkingManager {
     public void remove() {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("*******************************");
-        System.out.println("Remove Vehicle");
-        System.out.println("*******************************");
-        System.out.println("Please, enter ID : ");
+        out.println("*******************************");
+        out.println("Remove Vehicle");
+        out.println("*******************************");
+        out.println("Please, enter ID : ");
+        int removeInputId = in.nextInt();
 
 
+        out.println("*******************************");
+        out.println("Please, exit Hour : ");
+
+        int removeExitHour = in.nextInt();
+        if (removeExitHour >= 1 && removeExitHour <= 24) {
+            int indexOfid = data.indexOf(vehicle);
+
+            out.println(vehicle);
+            vehicle.setExitHour(removeExitHour);
+
+
+            for (Vehicle i : data) {
+                out.println(i.toString());
+            }
+            out.println();
+
+            /////////////////////////////////////////////////
+            LastestPrint(indexOfid);
+
+
+        }else{
+            out.println("your number must between 1 , 24");
+        }
+    }
+
+    private void LastestPrint(int indexOfid) {
+
+        out.println("*******************************");
+        out.println("Bill");
+        out.println("*******************************");
+        out.println("Entry Hour : " + data.get(indexOfid).getEntryHour());
+        out.println("Entry Hour : " + data.get(indexOfid).getExitHour());
+        out.println("Total Price : " + vehicle.getCost());
     }
 }

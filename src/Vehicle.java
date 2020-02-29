@@ -6,16 +6,12 @@ abstract class Vehicle {
     private int entryHour;
     private int exitHour;
 
-    Vehicle(int id,int entryHour) {
+    Vehicle(int id) {
         this.id=id;
-        this.entryHour=entryHour;
+
     }
 
     Vehicle(int id,int entryHour,int exitHour) {
-    }
-
-    public Vehicle() {
-
     }
 
 
@@ -34,10 +30,6 @@ abstract class Vehicle {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getEntryHour() {
         return entryHour;
     }
@@ -52,5 +44,14 @@ abstract class Vehicle {
 
     public void setExitHour(int exitHour) {
         this.exitHour = exitHour;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "id=" + id +
+                ", entryHour=" + entryHour +
+                ", exitHour=" + exitHour +
+                '}';
     }
 }
