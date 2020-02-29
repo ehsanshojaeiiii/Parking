@@ -2,17 +2,14 @@ import static java.lang.System.out;
 
 class Bike extends Vehicle {
 
-    public Bike(String name) {
-        super("bike");
-        int i = 0;
-        i++;
-        out.println("id = " + i);
+    public Bike(int id ,int entryHour) {
+
+        super(id,entryHour);
 
 
     }
 
-    Bike() {
-
+    public Bike() {
 
     }
 

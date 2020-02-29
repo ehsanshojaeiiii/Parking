@@ -4,15 +4,14 @@ import static java.lang.System.*;
 
 class Car extends Vehicle {
 
-    public Car(String name) {
-        super("car");
+    public Car(int id ,int entryHour) {
 
-
-    } public Car() {
-
+        super(id,entryHour);
     }
 
-
+    public Car() {
+        super();
+    }
 
 
     @Override

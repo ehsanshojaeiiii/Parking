@@ -2,16 +2,20 @@ import static java.lang.System.*;
 
 abstract class Vehicle {
 
-     int id;
+    private int id;
     private int entryHour;
     private int exitHour;
 
-    public Vehicle(String name) {
-
-
+    Vehicle(int id,int entryHour) {
+        this.id=id;
+        this.entryHour=entryHour;
     }
 
-     Vehicle() {
+    Vehicle(int id,int entryHour,int exitHour) {
+    }
+
+    public Vehicle() {
+
     }
 
 
@@ -26,6 +30,13 @@ abstract class Vehicle {
 
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getEntryHour() {
         return entryHour;
