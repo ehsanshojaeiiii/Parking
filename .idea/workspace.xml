@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51a11863-f8ed-4502-8336-e0a1d4df6f26" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1YP8c6q1dJUwy7ocsXHnlnHVbDf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="testchargoon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartClass" />
+      <module name="testchargoon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.StartClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51a11863-f8ed-4502-8336-e0a1d4df6f26" name="Default Changelist" comment="" />
+      <created>1582832944111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582832944111</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="417" y="208" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583001648913">
+      <screen x="0" y="0" width="1088" height="614" />
+    </state>
+    <state x="417" y="208" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1088.614@0.0.1088.614" timestamp="1583001648912" />
+    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1582999437405" />
+    <state width="1237" height="523" key="GridCell.Tab.0.bottom" timestamp="1582999470298">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="523" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582999470298" />
+    <state width="1237" height="523" key="GridCell.Tab.0.center" timestamp="1582999470298">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="523" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582999470298" />
+    <state width="1237" height="523" key="GridCell.Tab.0.left" timestamp="1582999470298">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="523" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582999470298" />
+    <state width="1237" height="523" key="GridCell.Tab.0.right" timestamp="1582999470298">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="523" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582999470298" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1583001685463">
+      <screen x="0" y="0" width="1088" height="614" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1088.614@0.0.1088.614" timestamp="1583001685463" />
+  </component>
+</project>
