@@ -4,16 +4,14 @@ import static java.lang.System.out;
 
 public class ParkingManager {
 
-    int entry = 0;
     int carHourInput = 0;
+
     int id = 0;
-    Map<String, Integer> map = new HashMap<>();
-    Car carNoArgs;
+
     ArrayList<Vehicle> data = new ArrayList<>();
+
     Vehicle vehicle;
 
-//    Bike bike = null;
-//    Car car = null;
 
     public void add() {
 
@@ -38,7 +36,7 @@ public class ParkingManager {
             try {
 
 
-                carHourInput = in.nextInt();
+                carHourInput =in.nextInt();
 
             } catch (InputMismatchException e) {
                 out.println("Error!Please Enter Correct Input");
@@ -85,37 +83,53 @@ public class ParkingManager {
 
     public void remove() {
         Scanner in = new Scanner(System.in);
-
-        out.println("*******************************");
-        out.println("Remove Vehicle");
-        out.println("*******************************");
-        out.println("Please, enter ID : ");
-        int removeInputId = in.nextInt();
-
-
-        out.println("*******************************");
-        out.println("Please, exit Hour : ");
-
-        int removeExitHour = in.nextInt();
-        if (removeExitHour >= 1 && removeExitHour <= 24) {
-            int indexOfid = data.indexOf(vehicle);
-
-            out.println(vehicle);
-            vehicle.setExitHour(removeExitHour);
+        if (!data.isEmpty()) {
+            out.println("*******************************");
+            out.println("Remove Vehicle");
+            out.println("*******************************");
+            out.println("Please, enter ID : ");
 
 
-            for (Vehicle i : data) {
-                out.println(i.toString());
+            int removeInputId = in.nextInt();
+            boolean isContain = data.contains(removeInputId);
+            if (isContain) {
+
+                out.println("*******************************");
+                out.println("Please, exit Hour : ");
+                int removeExitHour = 0;
+
+                removeExitHour = in.nextInt();
+
+                if (removeExitHour >= 1 && removeExitHour <= 24) {
+
+                    int indexOfid = data.indexOf(vehicle);
+
+                    out.println(vehicle);
+                    vehicle.setExitHour(removeExitHour);
+
+
+                    out.println("this is list of vehicles ");
+                    for (Vehicle i : data) {
+                        out.println(i.toString());
+                    }
+                    out.println();
+
+
+                    LastestPrint(indexOfid);
+
+
+                } else {
+                    out.println("your number must between 1 , 24");
+                }
+            } else {
+                out.println("your id is not exist");
             }
-            out.println();
 
-            /////////////////////////////////////////////////
-            LastestPrint(indexOfid);
-
-
-        }else{
-            out.println("your number must between 1 , 24");
+        } else {
+            out.println("Parking is empty");
         }
+
+
     }
 
     private void LastestPrint(int indexOfid) {

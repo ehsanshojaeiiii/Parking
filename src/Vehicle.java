@@ -11,8 +11,8 @@ abstract class Vehicle {
 
     }
 
-    Vehicle(int id,int entryHour,int exitHour) {
-    }
+//    Vehicle(int id,int entryHour,int exitHour) {
+//    }
 
 
     public abstract int entrancePrice();

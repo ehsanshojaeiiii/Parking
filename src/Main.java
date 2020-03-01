@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static java.lang.System.*;
@@ -24,9 +25,11 @@ public class Main {
                 parkingManager.add();
 
             } else if (input.equals("2")) {
-
-                parkingManager.remove();
-
+                try {
+                    parkingManager.remove();
+                } catch (InputMismatchException e) {
+                    out.println("Error ! Please Enter Correct Input");
+                }
             } else if (input.toLowerCase().equals("q")) {
 
                 out.println("Program Finished !");
